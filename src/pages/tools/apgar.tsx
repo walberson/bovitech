@@ -1,6 +1,5 @@
 import {
     Box,
-    Image,
     Heading,
     Text,
     Button,

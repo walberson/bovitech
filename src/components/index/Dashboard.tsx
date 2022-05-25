@@ -1,9 +1,7 @@
 import {
     RiHealthBookLine,
-    RiHeart2Line,
     RiHeartPulseLine,
     RiInsertColumnLeft,
-    RiMapPinAddFill,
     RiMedicineBottleLine,
     RiSearchEyeLine,
 } from 'react-icons/ri'

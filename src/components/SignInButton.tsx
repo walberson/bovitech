@@ -13,16 +13,20 @@ export function SignInButton() {
             onClick={() => signOut()}
             leftIcon={<FaGoogle />}
             w={'full'}
+            background="white"
             variant={'outline'}
+            borderRadius="full"
         >
             <Text mr="1.5rem">{session.user.name}</Text>
             <FaTimes />
         </Button>
     ) : (
         <Button
+            background="white"
             onClick={() => signIn('github')}
             w={'full'}
             variant={'outline'}
+            borderRadius="full"
             leftIcon={<FcGoogle />}
         >
             <Center>

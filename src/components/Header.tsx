@@ -28,7 +28,7 @@ export function Header() {
     return (
         <Box position="sticky" top="0" width="100%" zIndex="docked">
             <Flex
-                bg={useColorModeValue('white', 'gray.800')}
+                bg={useColorModeValue('green.800', 'gray.800')}
                 color={useColorModeValue('gray.600', 'white')}
                 minH={'60px'}
                 py={{ base: 2 }}
@@ -64,24 +64,28 @@ export function Header() {
                         justify={{ base: 'center', md: 'start' }}
                     >
                         <Text
+                            fontSize="xl"
+                            fontWeight="bold"
                             textAlign={useBreakpointValue({
                                 base: 'center',
                                 md: 'left',
                             })}
                             fontFamily={'heading'}
-                            color={useColorModeValue('gray.800', 'white')}
+                            color={useColorModeValue('white', 'white')}
                         >
-                            Buiatri
+                            Bovi
                         </Text>
                         <Text
+                            fontWeight="bold"
+                            fontSize="xl"
                             textAlign={useBreakpointValue({
                                 base: 'center',
                                 md: 'left',
                             })}
                             fontFamily={'heading'}
-                            color={useColorModeValue('pink.600', 'white')}
+                            color={useColorModeValue('pink.200', 'white')}
                         >
-                            Care
+                            Tech
                         </Text>
 
                         <Flex display={{ base: 'none', md: 'flex' }} ml={10}>

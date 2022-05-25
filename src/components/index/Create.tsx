@@ -1,4 +1,4 @@
-import { Text, Heading, Stack, Image, Box } from "@chakra-ui/react";
+import { Text, Heading, Stack, Image, Box } from '@chakra-ui/react'
 
 export function Create() {
     return (
@@ -7,20 +7,21 @@ export function Create() {
             align="center"
             padding="10"
             direction="column"
-            background="gray.600"
+            background="#00856F"
         >
-            <Box boxSize="160" mb="-8">
+            {/* <Box boxSize="160" mb="-8">
                 <Image alt="Gaia Logo" src="gaia.png" />
-            </Box>
-            <Heading color="white">Quem desenvolveu o BuiatriCare?</Heading>
+            </Box> */}
+            <Heading color="white">Quem desenvolveu o BoviTech?</Heading>
             <Text textAlign="justify" color="white" fontSize="md">
-                O BuiatriCare é a única plataforma tecnológica voltada ao médico
-                veterinário buiatra do Brasil. Seu projeto foi idealizado pelo
-                grupo de pesquisas GAIA - Livestock Health and Reproduction
-                Research Group. Grupo que nasceu em 2013 na Universidade Federal
-                Rural da Amazônia e desde então vem desenvolvendo ciência e
-                tecnologia para a sociedade.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem
+                praesentium laboriosam expedita soluta ab, voluptates sed nihil?
+                Tenetur quaerat, quod distinctio reiciendis minus ipsum
+                veritatis ratione minima illum ad! Fugit? Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Maiores rem quasi enim
+                corrupti eaque nostrum illum quas. Libero labore, delectus
+                corporis, unde adipisci suscipit officiis fuga odit non ex quae?
             </Text>
         </Stack>
-    );
+    )
 }

@@ -15,7 +15,6 @@ import {
     HStack,
     Button,
     useDisclosure,
-    Image,
     Text,
     NumberInput,
     NumberInputField,

@@ -2,13 +2,16 @@ import {
     Box,
     chakra,
     Container,
+    Flex,
     Stack,
     Text,
+    useBreakpointValue,
     useColorModeValue,
     VisuallyHidden,
 } from '@chakra-ui/react'
 import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
 import { ReactNode } from 'react'
+import Link from 'next/link'
 
 const SocialButton = ({
     children,
@@ -57,7 +60,49 @@ export function Footer() {
                 justify={{ base: 'center', md: 'space-between' }}
                 align={{ base: 'center', md: 'center' }}
             >
-                <Text>© 2021 Buiatric Care. All rights reserved</Text>
+                <Stack align="left">
+                    <Link href="/">
+                        <Flex
+                            as="button"
+                            ml="2rem"
+                            flex={{ base: 1 }}
+                            justify={{ base: 'center', md: 'start' }}
+                        >
+                            <Text
+                                fontSize="xl"
+                                fontWeight="bold"
+                                textAlign={useBreakpointValue({
+                                    base: 'center',
+                                    md: 'left',
+                                })}
+                                fontFamily={'heading'}
+                                color={useColorModeValue('black', 'white')}
+                            >
+                                Bovi
+                            </Text>
+                            <Text
+                                fontWeight="bold"
+                                fontSize="xl"
+                                textAlign={useBreakpointValue({
+                                    base: 'center',
+                                    md: 'left',
+                                })}
+                                fontFamily={'heading'}
+                                color={useColorModeValue('pink.800', 'white')}
+                            >
+                                Tech
+                            </Text>
+
+                            <Flex
+                                display={{ base: 'none', md: 'flex' }}
+                                ml={10}
+                            >
+                                {/* <DesktopNav /> */}
+                            </Flex>
+                        </Flex>
+                    </Link>
+                    <Text>© 2021. All rights reserved</Text>
+                </Stack>
                 <Stack direction={'row'} spacing={6}>
                     <SocialButton label={'Twitter'} href={'#'}>
                         <FaTwitter />
